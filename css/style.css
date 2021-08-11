@@ -1,0 +1,196 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    font-family: 'Rubik', sans-serif;
+    background-color: hsl(270, 20%, 96%);
+}
+.background-accent{
+    width: 50%;
+    height: 80%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 0 0 195px 0;
+    background: linear-gradient(45deg, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+}
+#wrapper{
+    padding: 50px 20px;
+}
+.iphone{
+    border: 10px solid white;
+    border-radius: 30px;
+    margin: 0 auto 30px;
+    overflow: hidden;
+    width: 300px;
+    position: relative;
+    background-color: hsl(270, 20%, 96%);
+    box-shadow: 1px 10px 20px -10px #a3a3a3;;
+}
+.notch{
+    /* border: 2px solid black; */
+    width: 150px;
+    height: 35px;
+    border-radius: 40px 40px;
+    position: absolute;
+    top: -18px;
+    left: 25%;
+    z-index: 1;
+    background-color: white;
+}
+header{
+    /* border: 2px solid black; */
+    width: 100%;
+    height: 70px;
+    border-radius: 0 0 10px 10px;
+    background: linear-gradient(90deg, hsl(264, 100%, 61%),hsl(276, 100%, 81%));
+    position: relative;
+}
+.content{
+    display: flex;
+    position: absolute;
+    bottom: 9px;  
+}
+header img{
+    /* border: 1px solid black; */
+    width: 30px;
+    height: 30px;
+    border-radius: 50% 50%;
+    overflow: hidden;
+    margin: 0 10px;  
+}
+.name{
+    padding-top: 3px;
+}
+.fa-chevron-left{
+    padding-top: 7px;
+    margin-left: 15px;
+    color: white;
+}
+.content h6{
+    color: hsl(270, 20%, 96%);
+    line-height: 15px;
+    font-size: .85em;
+}
+.content p{
+    color: hsl(276, 100%, 81%);
+    font-size: .6em;
+    width: 100%;
+}
+.fa-ellipsis-v{
+    color: white;
+    padding-top: 7px;
+    float: right;
+    padding-left: 90px;
+}
+.inbox{
+    padding: 15px 10px;
+}
+.recieved{
+    /* border: 1px solid black; */
+    font-size: .6em;
+    width: 60%;
+    margin-bottom: 10px;
+    color: hsl(276, 55%, 52%);
+    background-color: hsla(276, 55%, 52%, 0.1);
+    padding: 10px;
+    border-radius: 10px 10px 10px 5px;
+}
+.dogs{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.dogs img{
+    width: 50px;
+    border-radius: 15px;
+    margin: 5px;
+}
+.clearfix{
+    overflow: auto;
+}
+.sent{
+    /* border: 1px solid black; */
+    font-size: .65em;
+    width: 60%;
+    float: right;
+}
+.sent p{
+    float: right;
+    font-size: .95em;
+    margin: 5px 0;
+    background-color: white;
+    color: hsl(271, 15%, 43%);
+    padding: 10px;
+    border-radius: 10px 10px 5px 10px;
+}
+.walk{
+    font-size: .6em;
+    background: linear-gradient(90deg, hsl(276, 100%, 81%), hsl(264, 100%, 61%));
+    border-radius: 10px 10px 10px 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 70%;
+    overflow: auto;
+    color: white;
+}
+span{
+    float: right;
+    font-size: 1.5em;
+    margin-right: 5px;
+}
+#radio{
+    margin-right: 5px;
+}
+.chat{
+    position: relative;
+}
+#text-box{
+    border: none;
+    width: 100%;
+    padding: 15px;
+    border-radius: 40px;
+}
+#text-box::placeholder{
+    color: hsl(206, 6%, 79%);
+}
+.fa-chevron-right{
+    border: 2px solid black;
+    padding: 5px 10px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 10px;
+    top: 8px;
+    background-color: hsl(271, 36%, 24%);
+    color: white;
+    cursor: pointer;
+}
+.container{
+    text-align: center;
+    margin: 40px 0;
+}
+h1{
+    color: hsl(271, 36%, 24%);
+    font-size: 2em;
+    letter-spacing: .1em;
+    margin: 20px 0;
+}
+.container p{
+    color: hsl(270, 7%, 64%);
+    line-height: 1.5em;
+    padding: 0 20px;
+}
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+    font-weight: bold;
+}
