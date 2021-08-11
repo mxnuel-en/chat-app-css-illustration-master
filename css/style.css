@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
 body{
     font-family: 'Rubik', sans-serif;
@@ -19,26 +18,26 @@ body{
     background: linear-gradient(45deg, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
 }
 #wrapper{
-    padding: 50px 20px;
+    padding: 70px 20px;
 }
 .iphone{
     border: 10px solid white;
     border-radius: 30px;
     margin: 0 auto 30px;
     overflow: hidden;
-    width: 300px;
+    width: 270px;
     position: relative;
     background-color: hsl(270, 20%, 96%);
     box-shadow: 1px 10px 20px -10px #a3a3a3;;
 }
 .notch{
     /* border: 2px solid black; */
-    width: 150px;
+    width: 100px;
     height: 35px;
     border-radius: 40px 40px;
     position: absolute;
     top: -18px;
-    left: 25%;
+    left: 30%;
     z-index: 1;
     background-color: white;
 }
@@ -56,43 +55,44 @@ header{
     bottom: 9px;  
 }
 header img{
-    /* border: 1px solid black; */
-    width: 30px;
-    height: 30px;
+    border: 1px solid white;
+    width: 25px;
+    height: 25px;
     border-radius: 50% 50%;
     overflow: hidden;
     margin: 0 10px;  
 }
 .name{
-    padding-top: 3px;
+    padding-top: 1px;
 }
 .fa-chevron-left{
-    padding-top: 7px;
+    padding-top: 5px;
     margin-left: 15px;
     color: white;
 }
 .content h6{
     color: hsl(270, 20%, 96%);
     line-height: 15px;
-    font-size: .85em;
+    letter-spacing: .03em;
+    font-size: .7em;
 }
 .content p{
     color: hsl(276, 100%, 81%);
-    font-size: .6em;
+    font-size: .5em;
+    letter-spacing: .03em;
     width: 100%;
 }
 .fa-ellipsis-v{
     color: white;
-    padding-top: 7px;
-    float: right;
-    padding-left: 90px;
+    padding-top: 5px;
+    padding-left: 80px;
 }
 .inbox{
-    padding: 15px 10px;
+    padding: 10px;
 }
 .recieved{
     /* border: 1px solid black; */
-    font-size: .6em;
+    font-size: .55em;
     width: 60%;
     margin-bottom: 10px;
     color: hsl(276, 55%, 52%);
@@ -101,35 +101,36 @@ header img{
     border-radius: 10px 10px 10px 5px;
 }
 .dogs{
+    float: right;
+    width: 70%;
     display: flex;
     justify-content: flex-end;
 }
-
 .dogs img{
-    width: 50px;
+    width: 30%;
+    height: 30%;
     border-radius: 15px;
-    margin: 5px;
+    margin-left: 5px;
 }
 .clearfix{
     overflow: auto;
 }
 .sent{
     /* border: 1px solid black; */
-    font-size: .65em;
     width: 60%;
     float: right;
 }
 .sent p{
     float: right;
-    font-size: .95em;
+    font-size: .55em;
     margin: 5px 0;
     background-color: white;
     color: hsl(271, 15%, 43%);
-    padding: 10px;
+    padding: 7px;
     border-radius: 10px 10px 5px 10px;
 }
 .walk{
-    font-size: .6em;
+    font-size: .55em;
     background: linear-gradient(90deg, hsl(276, 100%, 81%), hsl(264, 100%, 61%));
     border-radius: 10px 10px 10px 5px;
     padding: 10px;
@@ -145,6 +146,7 @@ span{
 }
 #radio{
     margin-right: 5px;
+    outline: none;
 }
 .chat{
     position: relative;
@@ -152,33 +154,33 @@ span{
 #text-box{
     border: none;
     width: 100%;
-    padding: 15px;
+    padding: 10px;
     border-radius: 40px;
 }
 #text-box::placeholder{
     color: hsl(206, 6%, 79%);
 }
 .fa-chevron-right{
-    border: 2px solid black;
-    padding: 5px 10px;
+    /* border: 2px solid black; */
+    padding: 5px 9px;
     border-radius: 50%;
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     position: absolute;
-    right: 10px;
-    top: 8px;
+    right: 5px;
+    top: 5px;
     background-color: hsl(271, 36%, 24%);
     color: white;
     cursor: pointer;
 }
 .container{
     text-align: center;
-    margin: 40px 0;
+    margin: 30px 0;
 }
 h1{
     color: hsl(271, 36%, 24%);
     font-size: 2em;
-    letter-spacing: .1em;
+    letter-spacing: .05em;
     margin: 20px 0;
 }
 .container p{
@@ -188,9 +190,55 @@ h1{
 }
 .attribution { 
     font-size: 11px; 
-    text-align: center; 
+    text-align: center;
+    margin-bottom: 30px;
 }
 .attribution a { 
     color: hsl(228, 45%, 44%);
     font-weight: bold;
+}
+
+/* For Tablets devices */
+@media (min-width: 768px) {
+    .background-accent{
+        width: 45%;
+        left: -50px;
+        border-radius: 0 0 200px 200px;
+    }
+    h1{
+        letter-spacing: 0;
+    }
+    .container p{
+        line-height: 1.5em;
+        padding: 0 80px;
+    }
+}
+
+/* For Desktop devices */
+@media (min-width: 1440px) {
+    .background-accent{
+        width: 25%;
+        height: 75%;
+        left: -50px;
+        border-radius: 0 0 200px 200px;
+    }
+    #wrapper{
+        width: 1000px;
+        overflow: auto;
+        clear: both;
+        margin: 0 auto;
+    }
+    .iphone{
+        float: left;
+        margin: 0;
+    }
+    .container{
+        overflow: auto;
+        text-align: left;
+        margin-left: 350px;
+        padding: 130px 120px 0 30px;
+    }
+    .container p{
+        padding: 0;
+    }
 }
